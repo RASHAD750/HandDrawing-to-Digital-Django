@@ -1,0 +1,14 @@
+{% extends 'usermaster.html' %}
+{% block body %}
+<table class="table">
+    <tr>
+        <td>ID</td><td>IMAGE</td><td></td>
+
+    </tr>
+    {% for d in data %}
+    <tr>
+        <td>{{d.0}}</td><td><ima src="{{d.4}}" width="100px"></ima></td><td><a href="/resize/?id={{d.0}}">Resize</a></td><td><a href="/format/?id={{d.0}}">ChaneFormat</a></td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

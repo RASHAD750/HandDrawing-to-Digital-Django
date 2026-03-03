@@ -1,0 +1,21 @@
+{% extends 'usermaster.html' %}
+{% block body %}
+<div class="photograhy">
+    <h1>GALLERY</h1>
+    <div class="row no-gutters">
+        {% for d in data %}
+<div class="col-md-4 ftco-animate">
+    
+    <a href="../static/media/{{d.image}}" class="photography-entry img image-popup d-flex justify-content-center align-items-center" style="background-image: url('../static/media/{{d.image}}');"> -->
+        <div class="overlay"></div>
+        <div class="text text-center">
+            <h3>{{d.name}}</h3>
+            <span class="tag">{{d.cat}}</span>
+        </div>
+    </a>
+    
+</div>
+{% endfor %}
+</div>
+</div>
+{% endblock %}

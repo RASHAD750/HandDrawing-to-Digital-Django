@@ -1,0 +1,24 @@
+{% extends 'usermaster.html' %}
+{% block body %}
+<div>
+    <h1>ENHANCE IMAGE</h1>
+    <form method="POST"  enctype="multipart/form-data">
+        {% csrf_token %}
+   
+    <table class="table">
+        <tr><td colspan="2"></td></tr>
+        <tr><td>ImageName</td><td><input type="text" name="name"></td></tr>
+        <tr><td>Category</td><td><select name="cat">
+            <option value="Selfi">Selfi</option>
+            <option value="Events">Events</option>
+            <option value="Personal">Personal</option>
+        </select></td></tr>
+        <tr><td>Discription</td><td><input type="text" name="dis"></td></tr>
+        <tr><td>Image</td><td><input type="file" name="img"></td></tr>
+        
+        
+        <tr><td></td><td><input type="Submit" name="submit" value="SUBMIT"></td></tr>
+    </table>
+</form>
+</div>
+{% endblock %}

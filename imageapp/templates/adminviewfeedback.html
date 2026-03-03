@@ -1,0 +1,12 @@
+{% extends 'Adminmaster.html' %}
+{% block body %}
+<div>
+    <center><h1>FEEDBACK</h1></center>
+    <table class="table">
+        <tr><th>ID</th><th>USERNAME</th><th>FEEDBACK</th></tr>
+        {% for d in data %}
+        <tr><td>{{d.id}}</td><td>{{d.uname}}</td><td>{{d.feedback}}</td></tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

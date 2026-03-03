@@ -1,0 +1,12 @@
+{% extends 'Adminmaster.html' %}
+{% block body %}
+<div>
+    <center><h1>VIEW USERS</h1></center>
+    <table class="table">
+        <tr><th>Name</th><th>Email</th><th>Phone</th><th>Uname</th></tr>
+        {% for d in data %}
+        <tr><td>{{d.name}}</td><td>{{d.email}}</td><td>{{d.phone}}</td><td>{{d.uname}}</td></tr>
+        {% endfor %}
+    </table>
+</div> 
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'commonmaster.html' %}
+{% block body %}
+<div>
+    <form method="POST">
+        {% csrf_token %}
+   
+    <table class="table" style="background-color:wheat; opacity: 0.60; height:300px;width:300px;" >
+        <tr><td colspan="2"><center><h2 style="font-weight: bold;">LOGIN</h2></center> </td></tr>
+        <tr><td>Username</td><td><input type="text" name="uname" placeholder="Username" id="exampleFormControlInput1"></td></tr>
+        <tr><td>Password</td><td><input type="password" name="pass" placeholder="Password" title="Password"></td></tr>
+        <tr><td></td><td><input type="Submit" name="submit" value="SUBMIT"></td></tr>
+    </table>
+</form>
+</div>
+{% endblock %}

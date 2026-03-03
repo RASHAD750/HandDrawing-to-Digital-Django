@@ -1,0 +1,24 @@
+{% extends 'commonmaster.html' %}
+{% block body %}
+<div>
+    <form method="POST">
+        {% csrf_token %}
+   
+    <table class="table" style="background-color:wheat; opacity: 0.60; height:600px;width:300px;">
+        <tr><td colspan="2"><center><h2 style="font-weight: bold;">REGISTRATION</h2></center></td></tr>
+        <tr><td>Name</td><td><input type="text" name="name"></td></tr>
+        <tr><td>Email</td><td><input type="email" name="email"></td></tr>
+        <tr><td>Phone</td><td><input type="text" name="phone"></td></tr>
+        <tr><td>Gender</td><td><select name="gen">
+            <option value="male">MALE</option>
+            <option value="female">FEMALE</option>
+            <option value="other">OTHER</option>
+        </select></td></tr>
+        <tr><td>Username</td><td><input type="text" name="uname"></td></tr>
+        <tr><td>Password</td><td><input type="password" name="pass"></td></tr>
+       
+        <tr><td></td><td><input type="Submit" name="submit" value="SUBMIT"></td></tr>
+    </table>
+</form>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'usermaster.html' %}
+{% block body %}
+<div>
+    <h1>FEEDBACK</h1>
+    <form method="POST">
+        {% csrf_token %}
+   
+    <table class="table">
+        <tr><td colspan="2">REGISTRATION</td></tr>
+        <tr><td>Feddback</td><td><input type="text" name="feedback"></td></tr>
+       
+       
+        <tr><td></td><td><input type="Submit" name="submit" value="SUBMIT"></td></tr>
+    </table>
+</form>
+</div>
+{% endblock %}
