@@ -66,7 +66,7 @@ Follow these steps to run the project locally:
 ### 1️. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/HandDrawing-to-Digital-Django.git
+git clone https://github.com/RASHAD750/HandDrawing-to-Digital-Django.git
 cd HandDrawing-to-Digital-Django
 ```
 
