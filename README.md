@@ -119,11 +119,11 @@ http://127.0.0.1:8000/
 
 ##  Features
 
-✔ Upload hand-drawn image  
-✔ Process and enhance image  
-✔ Display enhanced output  
-✔ Organized Django project structure  
-✔ Database-backed application  
+ Upload hand-drawn image  
+ Process and enhance image  
+ Display enhanced output  
+ Organized Django project structure  
+ Database-backed application  
 
 ---
 
